@@ -70,6 +70,7 @@ function chooseWord() {
 }
 //makes Word objects from the array wordlist
 function setWords() {
+    guessedLetters = [];
     wordList.forEach(function (j) {
         let newWord = new WordJs(j);
         newWord.makeLetterObjectArray();
